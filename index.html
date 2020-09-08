@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyBurger By arlealexandre</title>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet"> 
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <!--  NAVBAR -->
+
+    <nav class="navbar">
+
+        <ul>
+
+            <li>
+                <a class="logo" href="index.html"><span id="t1">Easy</span><span id="t2">Burger</span></a>
+            </li>
+
+        </ul>
+
+        <ul>
+
+            <li>
+                <a class="nav-items" id="our-burger">Our Burgers</a>
+            </li>
+
+            <li>
+                <a class="nav-items" id="about-our-meat">Abour Our Meat</a>
+            </li>
+
+            <li>
+                <a class="nav-items" id="locate">Locate</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- BURGERS SECTION -->
+
+    <div class="menu-section" id="div1">
+        <span class="close-btn" id="close1">X</span>
+        <div class="burger">
+            <div class="container-burger">
+                <div class="components" id="title-burger">Classic Burger</div>
+                <div class="components" id="bread-1">Bread</div>
+                <div class="components" id="salad">Salad</div>
+                <div class="components" id="cheddar">Cheddar</div>
+                <div class="components" id="steak">Steak</div>
+                <div class="components" id="cheddar">Cheddar</div>
+                <div class="container-tomatoes">
+                    <div class="components" id="tomatoes">Tomatoes</div>
+                    <div class="components" id="tomatoes">Tomatoes</div>
+                </div>
+                <div class="components" id="bread-2">Bread</div>
+                <div class="about-burger">
+                    <p>This good old classic burger that we love so much!</p>
+                    <div id="price">Price: $6</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="burger">
+            <div class="container-burger">
+                <div class="components" id="title-burger">Chicken Burger</div>
+                <div class="components" id="bread-1">Bread</div>
+                <div class="components" id="salad">Salad</div>
+                <div class="components" id="cheddar">Cheddar</div>
+                <div class="components" id="chicken">Chicken</div>
+                <div class="components" id="cheddar">Cheddar</div>
+                <div class="container-tomatoes">
+                    <div class="components" id="tomatoes">Tomatoes</div>
+                    <div class="components" id="tomatoes">Tomatoes</div>
+                </div>
+                <div class="components" id="bread-2">Bread</div>
+                <div class="about-burger">
+                    <p>Change your meat with the chicken burger!</p>
+                    <div id="price">Price: $7</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="burger">
+            <div class="container-burger" id="veggie-burger">
+                <div class="components" id="title-burger">Veggie Burger</div>
+                <div class="components" id="bread-1">Bread</div>
+                <div class="components" id="salad">Salad</div>
+                <div class="components" id="tofu">Tofu</div>
+                <div class="components" id="vegetable-steak">Vegetable Steak</div>
+                <div class="components" id="tofu">Tofu</div>
+                <div class="container-tomatoes">
+                    <div class="components" id="tomatoes">Tomatoes</div>
+                    <div class="components" id="tomatoes">Tomatoes</div>
+                </div>
+                <div class="components" id="bread-2">Bread</div>
+                <div class="about-burger">
+                    <p>Because we need to change the world.</p>
+                    <div id="price">Price: $7.5</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MEAT SECTION -->
+
+    <div class="menu-section" id="div2">
+        <span class="close-btn" id="close2">X</span>
+        <div class="burger">
+            <div class="container-burger" id="classic-burger-meat">
+                <div class="components" id="steak">Steak</div>
+                <div class="about-meat">
+                    <p>Bovine meat raised in your country.</p>
+                    <div id="quality">Guaranteed quality</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="burger">
+            <div class="container-burger" id="chicken-burger-meat">
+                <div class="components" id="chicken">Chicken</div>
+                <div class="about-meat">
+                    <p>Farmhouse chicken meat raised in your country.</p>
+                    <div id="quality">Guaranteed quality</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="burger">
+            <div class="container-burger" id="veggie-burger-meat">
+                <div class="components" id="vegetable-steak">Vegetable Steak</div>
+                <div class="about-meat">
+                    <p>Vegetal steak with soya and wheat.</p>
+                    <div id="quality">Guaranteed quality</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOCATION SECTION -->
+
+    <div class="menu-section" id="div3">
+        <span class="close-btn" id="close3">X</span>
+        <div class="places">
+            <h1 class="h1-places">USA</h1>
+            <p class="p-places">New York</p>
+            <p class="p-places">Chicago</p>
+            <p class="p-places">Washington</p>
+            <p class="p-places">Miami</p>
+            <p class="p-places">Los Angeles</p>
+            <p class="p-places">San Francisco</p>
+            <p class="p-places">Boston</p>
+            <p class="p-places">Seattle</p>
+        </div>
+
+        <div class="places">
+            <h1 class="h1-places">France</h1>
+            <p class="p-places">Paris</p>
+            <p class="p-places">Lyon</p>
+            <p class="p-places">Marseille</p>
+            <p class="p-places">Bordeaux</p>
+            <p class="p-places">Lille</p>
+            <p class="p-places">Grenoble</p>
+        </div>
+
+        <div class="places">
+            <h1 class="h1-places">Italy</h1>
+            <p class="p-places">Roma</p>
+            <p class="p-places">Torino</p>
+            <p class="p-places">Milano</p>
+            <p class="p-places">Napoli</p>
+            <p class="p-places">Firenze</p>
+        </div>
+
+        <div class="places">
+            <h1 class="h1-places">Spain</h1>
+            <p class="p-places">Barcelona</p>
+            <p class="p-places">Madrid</p>
+            <p class="p-places">Valencia</p>
+            <p class="p-places">Sevilla</p>
+            <p class="p-places">San Sebastian</p>
+        </div>
+
+        <div class="places">
+            <h1 class="h1-places">Canada</h1>
+            <p class="p-places">Toronto</p>
+            <p class="p-places">Québec</p>
+            <p class="p-places">Edmonton</p>
+            <p class="p-places">Halifax</p>
+        </div>
+
+        <div class="places">
+            <h1 class="h1-places">England</h1>
+            <p class="p-places">London</p>
+            <p class="p-places">Manchester</p>
+            <p class="p-places">Liverpool</p>
+        </div>
+
+        <div class="places">
+            <h1 class="h1-places" style="width: 200px;">and More!</h1>
+        </div>
+    </div>
+
+    <!-- PAY SECTION -->
+
+    <div class="menu-section" id="div4">
+        <span class="close-btn" id="close4">X</span>
+        <div class="choice">
+
+            <div class="choice-box" id="burger-box">
+                <h1 class="h1-order">Burger</h1>
+
+                <div class="burger-choice">
+                    <h1 class="subh1-order">Classic Burger ($6)</h1><input type="number" onclick="total_payable()" value="0" class="nb-burger" id="nb-classic-burger" min="0" max="20">
+                </div>
+
+                <div class="burger-choice">
+                    <h1 class="subh1-order">Chicken Burger ($7)</h1><input type="number" onclick="total_payable()" value="0" class="nb-burger" id="nb-chicken-burger" min="0" max="20">
+                </div>
+
+                <div class="burger-choice">
+                    <h1 class="subh1-order">Veggie Burger ($7.5)</h1><input type="number" onclick="total_payable()" value="0" class="nb-burger" id="nb-veggie-burger" min="0" max="20">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="choice">
+
+            <div class="choice-box" id="trimmings-box">
+                <h1 class="h1-order">Trimmings</h1>
+
+                <div class="burger-choice">
+                    <h1 class="subh1-order">Fries ($2)</h1><input type="number" onclick="total_payable()" value="0" class="nb-burger" id="nb-fries" min="0" max="20">
+                </div>
+
+                <div class="burger-choice">
+                    <h1 class="subh1-order">Potatoes ($3)</h1><input type="number" onclick="total_payable()" value="0" class="nb-burger" id="nb-potatoes" min="0" max="20">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="choice">
+
+            <div class="choice-box" id="beverages-box">
+                <h1 class="h1-order">Beverages</h1>
+
+                <div class="burger-choice">
+                    <h1 class="subh1-order">Fresh Tea ($2)</h1><input type="number" onclick="total_payable()" value="0" class="nb-burger" id="nb-tea" min="0" max="20">
+                </div>
+
+                <div class="burger-choice">
+                    <h1 class="subh1-order">Cola Soda ($3)</h1><input type="number" onclick="total_payable()" value="0" class="nb-burger" id="nb-cola" min="0" max="20">
+                </div>
+
+                <div class="burger-choice">
+                    <h1 class="subh1-order">Beer ($4.5)</h1><input type="number" onclick="total_payable()" value="0" class="nb-burger" id="nb-beer" min="0" max="20">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="choice">
+
+            <div class="choice-box" id="payable-box">
+                <h1 class="h1-order">Total Payable</h1>
+
+                <div class="burger-choice">
+                    <h1 class="subh1-order">$<span id="total-payable">0</span></h1>
+                    <button id="pay-btn">Pay</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- HOME SECTION -->
+
+    <center>
+        <div class="burger-animation">
+            <div class="container-burger-animation">
+                <div class="components-animation" id="title-burger"></div>
+                <div class="components-animation" id="bread-1"></div>
+                <div class="components-animation" id="salad"></div>
+                <div class="components-animation" id="cheddar"></div>
+                <div class="components-animation" id="steak"></div>
+                <div class="components-animation" id="cheddar"></div>
+                <div class="container-tomatoes">
+                    <div class="components-animation" id="tomatoes"></div>
+                    <div class="components-animation" id="tomatoes"></div>
+                </div>
+                <div class="components-animation" id="bread-2"></div>
+            </div>
+        </div>
+
+        <div>
+            <h1 id="subtitle"><span id="w1">Choose</span><span id="w2">,</span><span id="w3"> Pay</span><span id="w4"> and</span><span id="w5"> Go</span><span id="w6">!</span></h1>
+        </div>
+        <h1 class="title">*Order your burger from home!</h1>
+        <div class="container-order-btn"><button class="order-btn" id="order">Order Now!</button></div>
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,484 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fugaz One', cursive;
+}
+
+.navbar {
+    padding: 20px;
+    background-color: #084c61;
+
+}
+
+ul {
+    margin: 0;
+    display: inline;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    transition: .2s;
+} li:hover {
+    transform: skew(-20deg);
+}
+
+li a {
+    cursor: pointer;
+}
+
+.logo {
+    font-family: 'Fugaz One', cursive;
+    font-weight: 800;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-style: oblique;
+    display: inline-flex;
+    width: max-content;
+}
+
+.nav-items {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    font-family: 'Fugaz One', cursive;
+    opacity: 0.8;
+    transition: .2s;
+    padding: 3px;
+    transform: skew(20deg);
+}
+
+.nav-items:hover {
+    background-color: #db3a34;
+    opacity: 1;
+}
+
+.menu-section {
+    display: block;
+    padding: 20px;
+    height: max-content;
+    margin-bottom: 20px;
+}
+
+#div1{
+    background: #ffc857;
+    text-align: center;
+}
+
+#div2{
+    background: #323031;
+    text-align: center;
+}
+
+#div3{
+    background: #1B8792;
+}
+
+#div4{
+    background: #667D43;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Fugaz One', cursive;
+    font-weight: 800;
+    text-decoration: none;
+    color: #323031;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.order-btn {
+    border: 2px solid #323031;
+    cursor: pointer;
+    font-family: 'Fugaz One', cursive;
+    width: 300px;
+    font-size: 30px;
+    padding: 3px;
+    opacity: 0.8;
+    background-color: transparent;
+    transition: .1s;
+}
+
+.order-btn:hover {
+    background-color: #db3a34;
+    opacity: 1;
+    color: #f1f1f1;
+    font-size: 32px;
+    border: 2px solid #db3a34;
+    transform: skew(-20deg);
+}
+
+#subtitle {
+    color: #323031;
+    margin: 0;
+}
+
+.close-btn {
+    float: right;
+    font-size: 30px;
+    color: #323031;
+    cursor: pointer;
+    transition: .2s;
+    opacity: 0.8;
+    padding: 0px 10px;
+} .close-btn:hover {
+    transform: skew(-20deg);
+    background-color: #db3a34;
+    color: #f1f1f1;
+    opacity: 1;
+}
+
+#close2 {
+    color: #f1f1f1;
+} #close2:hover {
+    transform: skew(-20deg);
+    background-color: #db3a34;
+    color: #f1f1f1;
+    opacity: 1;
+}
+
+/* OUR BURGER TOGGLE *//* OUR BURGER TOGGLE *//* OUR BURGER TOGGLE *//* OUR BURGER TOGGLE */
+
+.burger {
+    display: inline-block;
+}
+
+.container-burger{
+    width: 250px;
+    border: 2px solid #323031;
+    padding: 20px;
+    margin-left: 10px;
+    transition: .2s;
+}
+
+.container-burger:hover {
+    padding: 15px;
+    transform: skew(-2deg);
+}
+
+.components {
+    display: block;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+#title-burger{
+    color: #323031;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#bread-1 {
+    background-color: rgb(224, 161, 89);
+    border-radius: 50px 50px 5px 5px;
+    height: 45px;
+}
+
+#bread-2 {
+    background-color: rgb(224, 161, 89);
+    border-radius: 5px 5px 10px 10px;
+    height: 35px;
+}
+
+.container-tomatoes {
+    display: flex;
+}
+
+#tomatoes {
+    background-color: #db3a34;
+    border-radius: 5px;
+    display: inline-block;
+    width: 150px;
+}
+
+#cheddar {
+    background-color: rgb(236, 220, 68);
+    border-radius: 5px;
+}
+
+#tofu {
+    background-color: rgb(241, 239, 222);
+    border-radius: 5px;
+    color: #323031;
+}
+
+#salad {
+    background-color: rgb(49, 139, 41);
+    border-radius: 5px;
+}
+
+#steak {
+    background-color: rgb(77, 43, 11);
+    border-radius: 5px;
+    height: 30px;
+    text-justify: auto;
+}
+
+#chicken {
+    background-color: rgb(241, 111, 35);
+    border-radius: 5px;
+    height: 30px;
+    text-justify: auto;
+}
+
+#vegetable-steak {
+    background-color: rgb(110, 82, 56);
+    border-radius: 5px;
+    height: 30px;
+    text-justify: auto;
+}
+
+.about-burger {
+    text-align: -moz-center;
+}
+
+p{
+color: #323031;
+}
+
+#price {
+    background-color: #323031;
+    color:  #f1f1f1;
+    width: max-content;
+    padding-right: 3px;
+    padding-left: 3px;
+    animation: price-animation 3s infinite;
+}
+
+@keyframes price-animation {
+    0%{
+        opacity: 1;
+        transform: skew(0deg);
+    }
+    25%{
+        opacity: 1;
+        transform: skew(-45deg);
+    }
+    50%{
+        opacity: 0;
+        transform: skew(-85deg);
+    }
+    75%{
+        opacity: 1;
+        transform: skew(-180deg);
+    }
+    100%{
+        opacity: 1;
+        transform: skew(-180deg);
+    }
+}
+
+#veggie-burger {
+    background-color: #667D43;
+}
+
+#veggie-burger #title-burger {
+    color: #f1f1f1;
+}
+
+#veggie-burger p {
+    color: #f1f1f1;
+}
+
+/* MEATS SECTION *//* MEATS SECTION *//* MEATS SECTION *//* MEATS SECTION */
+
+#classic-burger-meat, #chicken-burger-meat, #veggie-burger-meat {
+    border: 2px solid #f1f1f1;
+}
+
+#veggie-burger-meat {
+    background-color: #667D43;
+}
+
+#quality {
+    background-color: #db3a34;
+    color:  #f1f1f1;
+    width: max-content;
+    padding-right: 3px;
+    padding-left: 3px;
+    animation: price-animation 3s infinite;
+}
+
+.about-meat {
+    text-align: -moz-center;
+}
+
+.about-meat p{
+    color: #f1f1f1;
+}
+
+/* PLACES SECTION *//* PLACES SECTION *//* PLACES SECTION *//* PLACES SECTION */
+
+.places {
+    display: inline-table;
+    width: 150px;
+    margin-left: 10px;
+    height: max-content;
+}
+
+.h1-places {
+    color: #323031;
+}
+
+.p-places {
+    cursor: pointer;
+    transition: .2s;
+    opacity: 0.8;
+    color: #f1f1f1;
+} .p-places:hover {
+    text-decoration-line: underline;
+}
+
+/* ORDER SECTION *//* ORDER SECTION *//* ORDER SECTION *//* ORDER SECTION */
+
+.first-h1-order {
+    margin: 0;
+    color: #f1f1f1;
+    transform: skew(-20deg);
+    background-color: #db3a34;
+}
+
+.h1-order {
+    color: #323031;
+    margin: 0;
+}
+
+.subh1-order {
+    color: #f1f1f1;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.choice {
+    display: inline-table;
+}
+
+.choice-box{
+    width: 250px;
+    border: 2px solid #323031;
+    background-color: transparent;
+    padding: 20px;
+    margin-left: 10px;
+    transition: .2s;
+    height: 200px;
+} .choice-box:hover {
+    transform: skew(-2deg);
+}
+
+.burger-choice {
+    background: transparent;
+}
+
+.nb-burger {
+    display: inline-block;
+    margin-left: 10px;
+    width: 35px;
+    border: none;
+    background: transparent;
+    color: #f1f1f1;
+    font-family: 'Fugaz One', cursive;
+    font-size: 18px;
+}
+
+#burger-box:hover {
+    background-color: #775334;
+}
+
+#trimmings-box:hover {
+    background-color: #ffc857;
+}
+
+#beverages-box:hover {
+    background-color: #894B9F;
+}
+
+#payable-box {
+    background-color: #323031;
+}
+
+#payable-box h1{
+    color: #f1f1f1;
+}
+
+#payable-box .subh1-order{
+    color: #f1f1f1;
+    transform: skew(-20deg);
+    padding: 10px;
+    background-color: #db3a34;
+    border: none;
+    font-family: 'Fugaz One', cursive;
+    font-size: 40px;
+    border: 2px solid #db3a34;
+}
+
+#pay-btn {
+    color: #f1f1f1;
+    transform: skew(-20deg);
+    padding: 10px;
+    background-color: transparent;
+    font-family: 'Fugaz One', cursive;
+    font-size: 40px;
+    transition: .2s;
+    border: 2px solid #f1f1f1;
+    cursor: pointer;
+} #pay-btn:hover {
+    background-color: #db3a34;
+    border: 2px solid #db3a34;
+}
+
+/* HOME ANIMATION *//* HOME ANIMATION *//* HOME ANIMATION *//* HOME ANIMATION */
+
+.burger-animation {
+    width: max-content;
+} .burger-animation:hover {
+    animation: burger-animation 0.35s ease infinite alternate;
+}
+
+@keyframes burger-animation {
+    from {transform: translateY(0);}
+     to  {transform: translateY(-20px);}
+}
+
+.container-burger-animation{
+    width: 250px;
+    padding: 20px;
+}
+
+.components-animation {
+    display: block;
+    height: 15px;
+}
+
+/* RESPONSIVE *//* RESPONSIVE *//* RESPONSIVE *//* RESPONSIVE *//* RESPONSIVE */
+
+@media (max-width: 992px){
+    ul{
+        text-align: center;
+        display: block;
+        padding: 0;
+    }
+    .container-burger {
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    .places {
+        display: block;
+    }
+    .close-btn{
+        float: none;
+        display: block;
+        width: max-content;
+    }
+    .order-btn {
+        margin-bottom: 20px;
+    }
+    .choice-box {
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+}
